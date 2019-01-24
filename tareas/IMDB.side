@@ -1,0 +1,136 @@
+{
+  "id": "184ec932-e20b-4aba-89f4-01dd8c015ca7",
+  "version": "2.0",
+  "name": "IMDB",
+  "url": "https://www.imdb.com",
+  "tests": [{
+    "id": "6e67dfef-893c-4a2d-9649-3d0cc62c6b5c",
+    "name": "search-movie",
+    "commands": [{
+      "id": "217afec7-ef42-4a7f-945a-3c5be1fd9223",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3f75611b-629b-479d-a72e-da6a86721bb5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "726x451",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1d78ce53-c0c4-4cca-9f7d-dbe8f77d330b",
+      "comment": "",
+      "command": "click",
+      "target": "id=navbar-query",
+      "targets": [
+        ["id=navbar-query", "id"],
+        ["name=q", "name"],
+        ["css=#navbar-query", "css:finder"],
+        ["css=#navbar-query", "css"],
+        ["xpath=//input[@id='navbar-query']", "xpath:attributes"],
+        ["xpath=//div[@id='nb_search']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0298ad61-c874-4a31-81ea-c1416eda77a1",
+      "comment": "",
+      "command": "type",
+      "target": "id=navbar-query",
+      "targets": [
+        ["id=navbar-query", "id"],
+        ["name=q", "name"],
+        ["css=#navbar-query", "css:finder"],
+        ["css=#navbar-query", "css"],
+        ["xpath=//input[@id='navbar-query']", "xpath:attributes"],
+        ["xpath=//div[@id='nb_search']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "thor"
+    }, {
+      "id": "71d39083-4c5f-4f4a-b844-a57970a7c6ca",
+      "comment": "",
+      "command": "click",
+      "target": "css=.magnifyingglass",
+      "targets": [
+        ["css=.magnifyingglass", "css:finder"],
+        ["css=div.magnifyingglass.navbarSprite", "css"],
+        ["xpath=//button[@id='navbar-submit-button']/div", "xpath:idRelative"],
+        ["xpath=//button/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a834f52-d37f-4a0a-a8b1-3580d1781c44",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "linkText=Thor",
+      "targets": [],
+      "value": "2000"
+    }, {
+      "id": "499d2c83-283c-4770-92c5-f95dc45abe4d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Thor",
+      "targets": [
+        ["linkText=Thor", "linkText"],
+        ["css=.findSection:nth-child(3) .odd > .result_text > a", "css:finder"],
+        ["css=td.result_text > a", "css"],
+        ["xpath=//a[contains(text(),'Thor')]", "xpath:link"],
+        ["xpath=//div[@id='main']/div/div[2]/table/tbody/tr/td[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/title/tt0800369/?ref_=fn_al_tt_1')])[2]", "xpath:href"],
+        ["xpath=//td[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d31c383-f04b-4532-87a6-33be98fdb960",
+      "comment": "",
+      "command": "click",
+      "target": "css=.slate_button",
+      "targets": [
+        ["css=.slate_button", "css:finder"],
+        ["xpath=//div[@id='title-overview-widget']/div/div[3]/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/video/imdb/vi1431476761?playlistId=tt0800369&ref_=tt_ov_vi')]", "xpath:href"],
+        ["xpath=//div[3]/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a46d8740-d8ee-492e-ad7f-010bcc329161",
+      "comment": "",
+      "command": "pause",
+      "target": "5000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4b2d7b88-9a86-4926-ae23-ac51e3c9485a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.jw-icon-playback",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "67bb6ae6-b21f-4a58-abc1-dfa34c72bc87",
+      "comment": "",
+      "command": "click",
+      "target": "css=.jw-icon-playback",
+      "targets": [
+        ["css=.jw-icon-playback", "css:finder"],
+        ["xpath=//div[@id='imdb-jw-video-1']/div[9]/div[4]/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[9]/div[4]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "68a4bc49-e8cc-4291-bb20-ca659b9ca1c3",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["6e67dfef-893c-4a2d-9649-3d0cc62c6b5c"]
+  }],
+  "urls": ["https://www.imdb.com/"],
+  "plugins": []
+}
