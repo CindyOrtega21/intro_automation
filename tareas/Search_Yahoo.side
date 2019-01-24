@@ -1,0 +1,142 @@
+{
+  "id": "32afc1fe-5186-4934-a056-c5953f72e0a7",
+  "version": "2.0",
+  "name": "Search_Yahoo",
+  "url": "https://espanol.yahoo.com",
+  "tests": [{
+    "id": "a65c12e7-1a47-4c09-92cf-096cb84e6e5d",
+    "name": "Search_Selenium",
+    "commands": [{
+      "id": "0b899c6d-7063-446b-8dd0-8a939d3ef65b",
+      "comment": "",
+      "command": "open",
+      "target": "/?p=us",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e55ec21c-660f-4603-8c25-fc12a829605f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "55a77bd2-4ef9-4cf9-a85c-8f53f30bc538",
+      "comment": "",
+      "command": "click",
+      "target": "id=uh-search-box",
+      "targets": [
+        ["id=uh-search-box", "id"],
+        ["name=p", "name"],
+        ["css=#uh-search-box", "css:finder"],
+        ["css=#uh-search-box", "css"],
+        ["xpath=//input[@id='uh-search-box']", "xpath:attributes"],
+        ["xpath=//td[@id='yui_3_18_0_3_1548299310086_630']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8b70d41-951f-478c-9cc5-a9d9b13b0fd4",
+      "comment": "",
+      "command": "type",
+      "target": "id=uh-search-box",
+      "targets": [
+        ["id=uh-search-box", "id"],
+        ["name=p", "name"],
+        ["css=#uh-search-box", "css:finder"],
+        ["css=#uh-search-box", "css"],
+        ["xpath=//input[@id='uh-search-box']", "xpath:attributes"],
+        ["xpath=//td[@id='yui_3_18_0_3_1548299310086_630']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "selenium"
+    }, {
+      "id": "e37a51b0-79a2-4448-94b9-b17e01e5c97f",
+      "comment": "",
+      "command": "click",
+      "target": " xpath=//button[@id='uh-search-button']/i",
+      "targets": [
+        ["id=yui_3_18_0_3_1548299310086_652", "id"],
+        ["css=#yui_3_18_0_3_1548299310086_652", "css:finder"],
+        ["css=#yui_3_18_0_3_1548299310086_652", "css"],
+        ["xpath=//i[@id='yui_3_18_0_3_1548299310086_652']", "xpath:attributes"],
+        ["xpath=//button[@id='uh-search-button']/i", "xpath:idRelative"],
+        ["xpath=//button/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b01c0d5-bc69-44a6-9040-d82061833579",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Selenium - Web Browser Automation",
+      "targets": [
+        ["id=yui_3_10_0_1_1548299323334_1719", "id"],
+        ["linkText=Selenium - Web Browser Automation", "linkText"],
+        ["css=#yui_3_10_0_1_1548299323334_1719", "css:finder"],
+        ["css=#yui_3_10_0_1_1548299323334_1719", "css"],
+        ["xpath=//a[contains(text(),'Selenium - Web Browser Automation')]", "xpath:link"],
+        ["xpath=//a[@id='yui_3_10_0_1_1548299323334_1719']", "xpath:attributes"],
+        ["xpath=//h3[@id='yui_3_10_0_1_1548299323334_1720']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.seleniumhq.org/')]", "xpath:href"],
+        ["xpath=//li/div/div/h3/a", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win5562",
+      "windowTimeout": 2000
+    }, {
+      "id": "d7e12b2b-c892-47ff-a0f4-5a581bff0279",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win5562}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bf306aa1-5cbc-458e-b375-648dc00bd71d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Download",
+      "targets": [
+        ["linkText=Download", "linkText"],
+        ["css=#menu_download > a", "css:finder"],
+        ["css=a[title=\"Get Selenium\"]", "css"],
+        ["xpath=//a[contains(text(),'Download')]", "xpath:link"],
+        ["xpath=//li[@id='menu_download']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/download/')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f229a9a1-71b7-4412-90ec-87cfb3f349f5",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "id=mainContent",
+      "targets": [],
+      "value": "10000"
+    }, {
+      "id": "2818d433-7b50-47d2-8387-77dfac31404e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=mainContent",
+      "targets": [
+        ["id=mainContent", "id"],
+        ["css=#mainContent", "css:finder"],
+        ["css=#mainContent", "css"],
+        ["xpath=//div[@id='mainContent']", "xpath:attributes"],
+        ["xpath=//div[@id='mBody']/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "0be07557-799f-4896-a101-c384487eff1c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a65c12e7-1a47-4c09-92cf-096cb84e6e5d"]
+  }],
+  "urls": ["https://espanol.yahoo.com/"],
+  "plugins": []
+}
